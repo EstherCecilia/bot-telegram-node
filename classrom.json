@@ -1,0 +1,63 @@
+{
+    "Monday":{
+        "day": "Segunda-feira",
+        "classrom": [
+            {
+                "name": "BUSINESS INTELLIGENCE E BIG DATA",
+                "teacher": "Humberto",
+                "hour": "416"
+            },
+            {
+                "name": "INTERNET DAS COISAS - IoT(PROJETO EXTENSÃO)",
+                "teacher": "Luis",
+                "hour": "211"
+            }
+        ]
+
+    },
+    "Tuesday":{
+        "day": "Terça-feira",
+        "classrom": [
+            {
+                "name": "INTELIGÊNCIA ARTIFICIAL",
+                "teacher": "Luis",
+                "hour": "416"
+            },
+            {
+                "name": "INTERNET DAS COISAS - IoT(PROJETO EXTENSÃO)",
+                "teacher": "Luis",
+                "hour": "211"
+            }
+        ]
+    },
+    "Wesdnesday":{
+        "day": "Quarta-feira",
+        "classrom": [
+            {
+                "name": "BUSINESS INTELLIGENCE E BIG DATA",
+                "teacher": "Humberto",
+                "hour": "206"
+            },
+            {
+                "name": "ENGENHARIA DE SOFTWARE I",
+                "teacher": "Luis",
+                "hour": "416"
+            }
+        ]
+    },
+    "Thursday":{
+        "day": "Quinta-feira",
+        "classrom": [
+            {
+                "name": "INTELIGÊNCIA ARTIFICIAL",
+                "teacher": "Luis",
+                "hour": "211"
+            },
+            {
+                "name": "ENGENHARIA DE SOFTWARE I",
+                "teacher": "Luis",
+                "hour": "212"
+            }
+        ]
+    }
+}

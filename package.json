@@ -1,0 +1,21 @@
+{
+    "name": "telegraf-bot",
+    "version": "1.0.0",
+    "description": "Um bot feito com Telegraf",
+    "main": "run.js",
+    "scripts": {
+        "start": "node run.js",
+        "test": "jest",
+        "lint": "eslint .",
+        "lint:fix": "eslint . --fix"
+    },
+    "author": "Esther Cecília",
+    "license": "ISC",
+    "dependencies": {
+        "telegraf": "^4.7.17"
+    },
+    "devDependencies": {
+        "eslint": "^8.57.0",
+        "jest": "^27.2.0"
+    }
+}
