@@ -32,8 +32,16 @@ function processMessage(message, botLogic) {
 	}
 }
 
+const token = process.env.TELEGRAM_BOT_TOKEN;
+
+// Verifica se o token está definido
+if (!token) {
+	console.error('O token do bot Telegram não está definido. Certifique-se de configurá-lo como uma variável de ambiente no Netlify.');
+	process.exit(1);
+}
+
 // Crie uma instância do bot passando o token fornecido pelo BotFather
-const bot = new Telegraf('KEY');
+const bot = new Telegraf(token); 
 const botLogic = new Bot();
 
 // Middleware para responder a mensagens de texto

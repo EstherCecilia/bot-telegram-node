@@ -4,14 +4,14 @@ const fs = require('fs');
 class Bot {
 	constructor() {
 		// Carrega os dados do arquivo JSON
-		this.classroomData = JSON.parse(fs.readFileSync('classrom.json'));
-		this.phrases = JSON.parse(fs.readFileSync('phrases.json'));
+		this.classroomData = JSON.parse(fs.readFileSync('data/classrom.json'));
+		this.phrases = JSON.parse(fs.readFileSync('data/phrases.json'));
 	}
 
 	getRandomPhrase() {
 		const randomIndex = Math.floor(Math.random() * this.phrases.length);
 		const phrase = this.phrases[randomIndex];
-		return `🌸 ${phrase.frase}. 🌸\n${phrase.autor}`;
+		return `🌸 ${phrase.frase}. \n${phrase.autor}🌸`;
 	}
   
 	getClassroom(message, valideDay) {
