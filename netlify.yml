@@ -1,7 +1,0 @@
-version: 3
-
-build:
-  base: /  
-  command: npm run build 
-  functions: dist
-  publish: dist
