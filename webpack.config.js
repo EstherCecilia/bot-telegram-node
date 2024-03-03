@@ -4,7 +4,7 @@ module.exports = {
 	mode: 'production',
 	entry: './src/index.js',
 	output: {
-		path: path.join(__dirname, 'dist'),
+		path: path.join(__dirname, 'functions'),
 		publicPath: '/',
 		filename: 'run.js',
 	},
