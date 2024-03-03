@@ -3,7 +3,7 @@ const fs = require('fs');
 
 class Random {
 	constructor() {
-		this.phrases = JSON.parse(fs.readFileSync('data/phrases.json'));
+		this.phrases = JSON.parse(fs.readFileSync('src/data/phrases.json'));
 	}
 
 	getRandomPhrase() {

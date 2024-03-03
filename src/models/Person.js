@@ -2,7 +2,7 @@ const fs = require('fs');
 
 class Person {
 	constructor(id) {
-		const data = JSON.parse(fs.readFileSync('data/index.json'));
+		const data = JSON.parse(fs.readFileSync('src/data/index.json'));
 		this.person = data[id];
 	}
 
