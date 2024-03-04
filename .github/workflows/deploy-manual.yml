@@ -1,0 +1,27 @@
+name: Deploy to Docker Hub
+
+on: workflow_dispatch
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: "18"
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build Docker image
+        run: docker build -t bot-telegram .
+
+      - name: Run Docker container
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+        run: docker run -d --rm -e TELEGRAM_BOT_TOKEN=$TELEGRAM_BOT_TOKEN -p 3000:3000 bot-telegram
