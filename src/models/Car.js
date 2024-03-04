@@ -7,6 +7,7 @@ class Car {
 		return `🚗 Informações do carro 🚗
 Nome: ${this.car.name}
 Modelo: ${this.car.model}
+Pneu: ${this.car.tires}
 Consumo: ${this.car.consumation.city.etanol} km/L (álcool) e ${this.car.consumation.city.gasoline} km/L (gasolina) na cidade.`;
 	}
 

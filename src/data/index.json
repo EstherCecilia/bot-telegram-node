@@ -6,6 +6,7 @@
       "name": "Abelardo",
       "model": "Volkswagen Polo Sedan 1.6 8V I-Motion (Flex) (Aut)",
       "year": "2012",
+      "tires": "Firestone 195 65 r15 91h",
       "consumation": {
         "city": {
           "etanol": "6.2",
