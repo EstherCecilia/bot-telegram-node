@@ -5,7 +5,7 @@ process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = 0;
 
 
 
-const token = process.env.TELEGRAM_BOT_TOKEN;
+const token = '7034300563:AAHQz5B7McKwsviDKG5j_yzdZPectTvm-IQ';
 
 // Verifica se o token está definido
 if (!token) {
@@ -17,9 +17,9 @@ if (!token) {
 const bot = new Telegraf(token); 
 
 // Middleware para responder a mensagens de texto
-bot.on('text', (ctx) => {
+bot.on('text', async (ctx) => {
 	const message = ctx.message.text;
-	const response = processMessageService(message);
+	const response = await processMessageService(message);
 	if (response) {
 		ctx.reply(response);
 	}

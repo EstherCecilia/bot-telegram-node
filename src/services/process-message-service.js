@@ -1,4 +1,6 @@
 const {
+	catWrds,
+	dogWrds,
 	motivation,
 	homeMessage,
 	daysInPortuguese,
@@ -23,12 +25,18 @@ const processMessageService = (message) => {
 	const classroom = new Classroom(dataPerson);
 	const randomBot = new Random();
 
+	if(catWrds.includes(messsageLowerCase)) {
+		return randomBot.getCatImage();
+	}
+	if(dogWrds.includes(messsageLowerCase)) {
+		return randomBot.getDogImage();
+	}
 	if (messsageLowerCase.includes('aula')) {
 		return classroom.getClassroom(message);
 	}
 
 	if (containsWord(messsageLowerCase , ['senha'])) {
-		return car.getInformation();
+		return randomBot.generateRandomPassword(8);
 	}
 
 	if (containsWord(messsageLowerCase , ['carro'])) {
@@ -60,6 +68,9 @@ const processMessageService = (message) => {
 	if (Object.keys(daysInPortuguese).includes(messsageLowerCase)) {
 		const valideDay = daysInPortuguese[messsageLowerCase];
 		return classroom.getClassroom(message, valideDay);
+	}
+	if (['home', 'menu'].includes(messsageLowerCase)) {
+		return homeMessage;
 	}
 
 	if (variantsHi.includes(messsageLowerCase)) {
