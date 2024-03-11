@@ -5,7 +5,7 @@ process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = 0;
 
 
 
-const token = '7034300563:AAHQz5B7McKwsviDKG5j_yzdZPectTvm-IQ';
+const token = process.env.TELEGRAM_BOT_TOKEN;
 
 // Verifica se o token está definido
 if (!token) {
