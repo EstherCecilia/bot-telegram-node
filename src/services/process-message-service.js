@@ -6,7 +6,8 @@ const {
 	daysInPortuguese,
 	variantsHi,
 	variantsBye,
-	carConsumation
+	carConsumation,
+	menu
 } = require('../config/const');
 const Person = require('../models/Person');
 const Car = require('../models/Car');
@@ -25,6 +26,9 @@ const processMessageService = (message) => {
 	const classroom = new Classroom(dataPerson);
 	const randomBot = new Random();
 
+	if (messsageLowerCase.includes('menu')) {
+		return menu;
+	}
 	if(catWrds.includes(messsageLowerCase)) {
 		return randomBot.getCatImage();
 	}

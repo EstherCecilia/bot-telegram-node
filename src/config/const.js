@@ -11,7 +11,8 @@ const variantsHi = ['oi', 'olá', 'eae', 'fala', 'opa', 'oi bot'];
 const variantsBye = ['tchau', 'adeus', 'até mais', 'até logo', 'flw', 'xau', 'bye'];
 const motivation = ['frase', 'motivação', 'citação', 'poesia'];
 const homeMessage = `👋 Olá! Seja bem-vindo ao bot.\n \n
-📚 Digite 'aula' para ver as aulas de hoje. \n
+Para saber as funcionalidades do chat digite 'menu'.\n`;
+const menu = `📚 Digite 'aula' para ver as aulas de hoje. \n
 🔑 Digite 'senha' para gerar uma senha aleatória.\n
 🐱 Digite 'gato' para ver uma imagem de gato.\n
 🐶 Digite 'cachorro' para ver uma imagem de cachorro.\n
@@ -22,6 +23,7 @@ const homeMessage = `👋 Olá! Seja bem-vindo ao bot.\n \n
 👋 Para se despedir, digite 'tchau'.\n`;
 
 module.exports = {
+	menu,
 	catWrds,
 	dogWrds,
 	daysInPortuguese,
